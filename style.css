@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 150px 1fr 1fr 150px;
+    height: 100vh;
+}
+.box{
+    align-content: center;
+    text-align: center;
+    background-color: linen;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.box-1, .box-5 {
+    grid-column: 1 /-1;
+}
+.box-2 {
+    grid-row: 2 / 4;
+}
